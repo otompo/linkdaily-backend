@@ -11,7 +11,7 @@ const http = require("http").createServer(app);
 
 // db connection
 mongoose
-  .connect(process.env.DATABASE)
+  .connect(process.env.DB_URL)
   .then(() => console.log("DB connected"))
   .catch((err) => console.log("DB CONNECTION ERROR: ", err));
 
